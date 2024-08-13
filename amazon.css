@@ -1,0 +1,229 @@
+*{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+.navbar{
+    height: 60px;
+    width:100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position:fixed;
+}
+.nav-logo{
+    width: 100px;
+    height: 50px;
+}
+.logo{
+    background-image: url("https://image.shutterstock.com/image-photo/image-260nw-2292992631.jpg");
+    width: 100%;
+    height: 50px;
+    background-size: cover;
+   
+
+}
+.border{
+    border: 0.5px solid transparent;
+}
+.border:hover{
+    border: 0.5px solid white;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-search{
+    display: flex;
+    width: 630px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.select-search{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #f3f3f3;
+   
+}
+form{
+    width: 100%;
+}
+.search{
+    width: 100%;
+    height: 38px;
+    border: none;
+    font-size: 1em;
+}
+.search:focus{
+    outline: none;
+}
+.search-icon{
+    width:45px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+.nav-search:hover{
+    border: 2px solid #febd68;
+    border-radius: 6px;
+}
+
+.nav-cart{
+    display: flex;
+    align-items: center;
+}
+.panel-menu{
+    background: none;
+    border: none;
+    color: white;
+}
+.panel{
+    padding-top: 60px;
+    background-color: #232f3e;
+    height: 39px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.panel-ops{
+    height: 100%;
+    width: 450px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.panel-ops>a{
+    height: 90%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* hero section */
+.hero-section{
+    background-image: url("https://m.media-amazon.com/images/I/61CiqVTRBEL._SX3000_.jpg");
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction:column-reverse;
+}
+.hero-msg{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+    width: 95%;
+    padding: 10px 14px;
+    height: 2em;
+}
+.hero-msg>a{
+    color: #007185;
+    text-decoration: none;
+}
+/* cards */
+.shop-section{
+   background-color: rgb(68, 15, 166);
+   background: linear-gradient(to bottom, rgb(73, 7, 197), #f3f3f3 50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box{
+    width: 23%;
+    height: 400px;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+.box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-con{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-con a{
+    color: #007185;
+    text-decoration: none;
+}
+h2{
+    font-size: 20px;
+}
+.hero-section a:hover{
+    color: rgb(232, 156, 15);
+}
+.shop-section a:hover{
+    color: rgb(232, 156, 15);
+}
+@media(max-width:1200px){
+    .box{
+        width: 47%;
+    }
+    .nav-location ,.nav-signin{
+        display: none;
+    }
+    .nav-search{
+        width:50%;
+    }
+
+}
+@media(max-width:800px){
+   .hero-section{
+    background-size:800px;
+   
+    background-color:  rgb(73, 7, 197);
+   }
+   .hero-msg{
+    font-size: 10px;
+    padding: 7px 10px;
+    margin-bottom: 12px;
+}
+}
+@media(max-width:500px){
+    .hero-section{
+        background-size:600px;
+        background-repeat: no-repeat;
+    }
+    .box{
+        width:96%;
+    }
+    .hero-msg{
+        font-size: 6px;
+        padding: 5px 6px;
+        margin-bottom: 10px;
+    }
+    .nav-returns{
+        display: none;
+    }
+    .nav-search{
+        width:80%;
+    }
+    .nav-logo{
+        width: 20%;
+    }
+    .nav-cart{
+        display: none;
+    }
+}
